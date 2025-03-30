@@ -10,15 +10,15 @@ from time import perf_counter
 
 
 def validate():
-    N = 1_000_000
+    N = 1_000_000_000
     lats = np.random.uniform(-90, 90, N).astype(np.float32)
     lons = np.random.uniform(-180, 180, N).astype(np.float32)
 
     resolution_km = 1.00
 
     init = perf_counter()
-    ## geohashes = geohash_bulk(lats, lons, resolution_km)
-    geohashes = geohash_around_bulk(lats, lons, resolution_km)
+    geohashes = geohash_bulk(lats, lons, resolution_km)
+    ## geohashes = geohash_around_bulk(lats, lons, resolution_km)
     print(f"Time: {perf_counter() - init:.2f} seconds")
     print(f"Million geohashes per second: {(N / (perf_counter() - init) // 1_000_000):.2f}")
 

@@ -4,26 +4,41 @@ from distutils.extension import Extension
 import numpy as np
 import os
 
-os.environ["CC"] = "/opt/homebrew/opt/llvm/bin/clang"
 
 MODULE_NAME = "geohashing"
 
-COMPILER_FLAGS = [
-        "-O3",
-        "-Wall",
-        "-march=native",
-        "-ffast-math",
+if os.uname().sysname == "Darwin":
+    os.environ["CC"] = "/opt/homebrew/opt/llvm/bin/clang"
+
+    COMPILER_FLAGS = [
+            "-O3",
+            "-Wall",
+            "-march=native",
+            "-ffast-math",
+            "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+            ## "-I/opt/homebrew/opt/libomp/include",
+            ## "-fopenmp",
+            "-pthread",
+            ]
+    LINKER_FLAGS = [
+        "-L/Library/Developer/CommandLineTools/usr/lib",
         "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
-        ## "-I/opt/homebrew/opt/libomp/include",
-        ## "-fopenmp",
-        "-pthread",
-        ]
-LINKER_FLAGS = [
-    "-L/Library/Developer/CommandLineTools/usr/lib",
-    "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
-    ## "-L/opt/homebrew/opt/libomp/lib",
-    ## "-lomp",
-]
+        ## "-L/opt/homebrew/opt/libomp/lib",
+        ## "-lomp",
+    ]
+elif os.uname().sysname == "Linux":
+    COMPILER_FLAGS = [
+            "-O3",
+            "-Wall",
+            "-march=native",
+            "-ffast-math",
+            "-pthread",
+            ]
+    LINKER_FLAGS = [
+            "-pthread",
+            ]
+else:
+    raise ValueError("Unsupported OS")
 
 extensions = [
         Extension(
