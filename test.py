@@ -17,8 +17,8 @@ def validate():
     resolution_km = 1.00
 
     init = perf_counter()
-    geohashes = geohash_bulk(lats, lons, resolution_km)
-    ## geohashes = geohash_around_bulk(lats, lons, resolution_km)
+    ## geohashes = geohash_bulk(lats, lons, resolution_km)
+    geohashes = geohash_around_bulk(lats, lons, resolution_km)
     print(f"Time: {perf_counter() - init:.2f} seconds")
     print(f"Million geohashes per second: {(N / (perf_counter() - init) // 1_000_000):.2f}")
 

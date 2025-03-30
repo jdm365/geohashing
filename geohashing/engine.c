@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <pthread.h>
 
 #include "engine.h"
 
@@ -391,33 +392,86 @@ void bulkGeohash64(
 	}
 }
 
+struct thread_args_32 {
+	float* lats;
+	float* lons;
+	uint32_t* hashes;
+	uint64_t start_idx;
+	uint64_t num_coords;
+	float resolution_width_km;
+	uint64_t shift_val;
+};
+
+void* geohash_thread_32(void* arg) {
+	struct thread_args_32* args = (struct thread_args_32*)arg;
+	float* lats = args->lats;
+	float* lons = args->lons;
+	uint32_t* hashes = args->hashes;
+	uint64_t start_idx = args->start_idx;
+	uint64_t num_coords = args->num_coords;
+	uint64_t shift_val = args->shift_val;
+
+	for (uint64_t i = 0; i < num_coords; ++i) {
+		hashes[start_idx + i] = _geohash32(lats[i], lons[i], shift_val);
+	}
+
+	pthread_exit(NULL);
+}
+
 
 void bulkGeohash32(
 		float* lats,
 		float* lons,
 		uint32_t* hashes,
 		uint64_t num_coords,
-		float resolution_width_km
+		float resolution_width_km,
+		size_t num_threads
 		) {
 	uint64_t bits = calculate_bits_for_resolution32(resolution_width_km);
 	uint64_t shift_val = 32 - (2 * bits);
 
-	printf("shift_val: %llu\n", shift_val);
 	uint64_t end_idx = num_coords - (num_coords % 8);
 
-	for (uint64_t i = 0; i < end_idx; i += 8) {
-		hashes[i] = _geohash32(lats[i], lons[i], shift_val);
-		hashes[i + 1] = _geohash32(lats[i + 1], lons[i + 1], shift_val);
-		hashes[i + 2] = _geohash32(lats[i + 2], lons[i + 2], shift_val);
-		hashes[i + 3] = _geohash32(lats[i + 3], lons[i + 3], shift_val);
-		hashes[i + 4] = _geohash32(lats[i + 4], lons[i + 4], shift_val);
-		hashes[i + 5] = _geohash32(lats[i + 5], lons[i + 5], shift_val);
-		hashes[i + 6] = _geohash32(lats[i + 6], lons[i + 6], shift_val);
-		hashes[i + 7] = _geohash32(lats[i + 7], lons[i + 7], shift_val);
-	}
+	if (num_threads == 1) {
+		for (uint64_t i = 0; i < end_idx; i += 8) {
+			hashes[i] = _geohash32(lats[i], lons[i], shift_val);
+			hashes[i + 1] = _geohash32(lats[i + 1], lons[i + 1], shift_val);
+			hashes[i + 2] = _geohash32(lats[i + 2], lons[i + 2], shift_val);
+			hashes[i + 3] = _geohash32(lats[i + 3], lons[i + 3], shift_val);
+			hashes[i + 4] = _geohash32(lats[i + 4], lons[i + 4], shift_val);
+			hashes[i + 5] = _geohash32(lats[i + 5], lons[i + 5], shift_val);
+			hashes[i + 6] = _geohash32(lats[i + 6], lons[i + 6], shift_val);
+			hashes[i + 7] = _geohash32(lats[i + 7], lons[i + 7], shift_val);
+		}
 
-	for (uint64_t i = end_idx; i < num_coords; ++i) {
-		hashes[i] = _geohash32(lats[i], lons[i], shift_val);
+		for (uint64_t i = end_idx; i < num_coords; ++i) {
+			hashes[i] = _geohash32(lats[i], lons[i], shift_val);
+		}
+	} else {
+		pthread_t threads[num_threads];
+		struct thread_args_32 args[num_threads];
+		uint64_t num_coords_per_thread = num_coords / num_threads;
+		uint64_t remaining_coords = num_coords % num_threads;
+		uint64_t current_start = 0;
+
+		for (size_t i = 0; i < num_threads; ++i) {
+			args[i].lats = lats + current_start;
+			args[i].lons = lons + current_start;
+			args[i].hashes = hashes;
+			args[i].start_idx = current_start;
+			args[i].resolution_width_km = resolution_width_km;
+			args[i].shift_val = shift_val;
+			
+			// Distribute the remaining coordinates among the first few threads
+			args[i].num_coords = num_coords_per_thread + (i < remaining_coords ? 1 : 0);
+			current_start += args[i].num_coords;
+
+		  	pthread_create(&threads[i], NULL, geohash_thread_32, &args[i]);
+		}
+
+		for (size_t i = 0; i < num_threads; ++i) {
+		  	pthread_join(threads[i], NULL);
+		}
 	}
 }
 

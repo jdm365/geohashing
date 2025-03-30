@@ -4,6 +4,7 @@ from libc.stdint cimport uint32_t, uint64_t
 
 cimport numpy as np
 import numpy as np
+import os
 np.import_array()
 
 
@@ -28,7 +29,8 @@ cdef extern from "engine.h":
             float* lons,
             uint32_t* hashes,
             size_t num_points,
-            float resolution_width_km
+            float resolution_width_km,
+            size_t num_threads
     )
     void bulkGeohash64(
             float* lats,
@@ -87,16 +89,18 @@ def geohash_bulk(
         np.ndarray[float, ndim=1] lats,
         np.ndarray[float, ndim=1] lons,
         float resolution_width_km,
+        size_t num_threads = 0,
         ):
     if resolution_width_km < 0.01:
         return geohash_bulk_64(lats, lons, <double>resolution_width_km)
     else:
-        return geohash32_bulk(lats, lons, resolution_width_km)
+        return geohash32_bulk(lats, lons, resolution_width_km, num_threads)
 
 cdef np.ndarray[uint32_t, ndim=1] geohash32_bulk(
         np.ndarray[float, ndim=1] lats,
         np.ndarray[float, ndim=1] lons,
         float resolution_width_km,
+        size_t num_threads,
         ):
     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint32)
     cdef float* lats_ptr = <float*>lats.data
@@ -104,7 +108,20 @@ cdef np.ndarray[uint32_t, ndim=1] geohash32_bulk(
     cdef uint32_t* hashes_ptr = <uint32_t*>hashes.data
     cdef uint64_t num_points = lats.shape[0]
 
-    bulkGeohash32(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)
+    if num_threads == 0:
+        if num_points > 5_000_000:
+            num_threads = os.cpu_count()
+        else:
+            num_threads = 1
+
+    bulkGeohash32(
+            lats_ptr, 
+            lons_ptr, 
+            hashes_ptr, 
+            num_points, 
+            resolution_width_km,
+            num_threads,
+            )
     return hashes
 
 cdef np.ndarray[uint64_t, ndim=1] geohash_bulk_64(

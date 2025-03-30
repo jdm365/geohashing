@@ -15,7 +15,8 @@ COMPILER_FLAGS = [
         "-ffast-math",
         "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         ## "-I/opt/homebrew/opt/libomp/include",
-        "-fopenmp",
+        ## "-fopenmp",
+        "-pthread",
         ]
 LINKER_FLAGS = [
     "-L/Library/Developer/CommandLineTools/usr/lib",

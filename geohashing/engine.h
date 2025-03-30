@@ -40,7 +40,7 @@ void _geohash32Around(float lat, float lon, uint64_t shift_val, float resolution
 void geohash64Around(float lat, float lon, double resolution_width_km, uint64_t* hashes);
 void geohash32Around(float lat, float lon, float resolution_width_km, uint32_t* hashes);
 void bulkGeohash64(float* lats, float* lons, uint64_t* hashes, uint64_t num_coords, double resolution_width_km);
-void bulkGeohash32(float* lats, float* lons, uint32_t* hashes, uint64_t num_coords, float resolution_width_km);
+void bulkGeohash32(float* lats, float* lons, uint32_t* hashes, uint64_t num_coords, float resolution_width_km, size_t num_threads);
 void bulkGeohash32Around(float* lats, float* lons, uint32_t* hashes, uint64_t num_coords, float resolution_width_km);
 void bulkGeohash64Around(float* lats, float* lons, uint64_t* hashes, uint64_t num_coords, double resolution_width_km);
 
