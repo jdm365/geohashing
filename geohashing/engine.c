@@ -14,31 +14,13 @@ static inline float LON_WRAP_SUB(float lon, float delta) {
 }
 
 
-inline double intBitsToDouble64(uint64_t i) {
-	union {
-		double f;
-		uint64_t i;
-	} u;
-	u.i = i;
-	return u.f;
-}
-
-inline float intBitsToFloat32(uint32_t i) {
-	union {
-		float f;
-		uint32_t i;
-	} u;
-	u.i = i;
-	return u.f;
-}
-
 inline void spreadBits64(uint64_t val, uint64_t *result, uint64_t offset) {
 	uint64_t x = val;
-	x = (x | (x << 16)) & 0x00FFFF0000FFFF00ULL;
-	x = (x | (x << 8)) & 0xFF00FF00FF00FF00ULL;
-	x = (x | (x << 4)) & 0x0F0F0F0F0F0F0F0FULL;
-	x = (x | (x << 2)) & 0x3333333333333333ULL;
-	x = (x | (x << 1)) & 0x5555555555555555ULL;
+	x = (x | (x << 16)) & 0x0000FFFF0000FFFFULL;
+	x = (x | (x << 8))  & 0x00FF00FF00FF00FFULL;
+	x = (x | (x << 4))  & 0x0F0F0F0F0F0F0F0FULL;
+	x = (x | (x << 2))  & 0x3333333333333333ULL;
+	x = (x | (x << 1))  & 0x5555555555555555ULL;
 
 	*result |= x << offset;
 }
@@ -51,7 +33,7 @@ inline uint64_t unspreadBits64(uint64_t x, uint64_t offset) {
 	result = (result | (result >> 2)) & 0x0F0F0F0F0F0F0F0FULL;
 	result = (result | (result >> 4)) & 0x00FF00FF00FF00FFULL;
 	result = (result | (result >> 8)) & 0x0000FFFF0000FFFFULL;
-	result = (result | (result >> 16)) & 0x0000000FFFFFFFFFULL;
+	result = (result | (result >> 16)) & 0x00000000FFFFFFFFULL;
 	return result;
 }
 
@@ -80,6 +62,9 @@ inline uint64_t calculate_bits_for_resolution64(double resolution_width_km) {
     // Approximate calculation:
     // Each bit halves the cell size.  We start with roughly half the circumference of the Earth
     // (at the equator), and keep dividing until we reach the desired resolution.
+
+	// Multiply by 2 to make radius of circle at most half of geohash cell edge.
+	resolution_width_km *= 2.0;
 
     double current_width = EARTH_RADIUS * PI;
     uint64_t bits = 0;
@@ -319,8 +304,8 @@ Coord decodeGeohash64(uint64_t hash) {
 	uint64_t lon_bits = unspreadBits64(hash, 0);
 	uint64_t lat_bits = unspreadBits64(hash, 1);
 
-	float lat = (float)(intBitsToDouble64(lat_bits) * _180_DIV_DOUBLE - 90.0);
-	float lon = (float)(intBitsToDouble64(lon_bits) * _360_DIV_DOUBLE - 180.0);
+	float lat = (float)(((double)lat_bits * _180_DIV_DOUBLE) - 90.0);
+	float lon = (float)(((double)lon_bits * _360_DIV_DOUBLE) - 180.0);	
 
 	return (Coord){.lat = lat, .lon = lon};
 }
@@ -329,23 +314,23 @@ Coord decodeGeohash32(uint32_t hash) {
 	uint32_t lon_bits = unspreadBits32(hash, 0);
 	uint32_t lat_bits = unspreadBits32(hash, 1);
 
-	float lat = (float)(intBitsToFloat32(lat_bits) * _180_DIV_DOUBLE - 90.0);
-	float lon = (float)(intBitsToFloat32(lon_bits) * _360_DIV_DOUBLE - 180.0);
+	float lat = ((float)lat_bits * _180_DIV_FLOAT) - 90.0f;
+	float lon = ((float)lon_bits * _360_DIV_FLOAT) - 180.0f;
 
 	return (Coord){.lat = lat, .lon = lon};
 }
 
-inline float haversine(float lat1, float lon1, float lat2, float lon2) {
+inline float _haversine(float lat1, float lon1, float lat2, float lon2) {
 	float phi1 = lat1 * PI_DIV_180;
 	float phi2 = lat2 * PI_DIV_180;
 	float delta_phi = (lat2 - lat1) * PI_DIV_180;
 	float delta_lambda = (lon2 - lon1) * PI_DIV_180;
 
-	float a = sin(delta_phi * 0.5) * sin(delta_phi * 0.5) +
-			cos(phi1) * cos(phi2) * sin(delta_lambda * 0.5) *
-			sin(delta_lambda * 0.5);
+	float a = sin(delta_phi * 0.5f) * sin(delta_phi * 0.5f) +
+			cos(phi1) * cos(phi2) * sin(delta_lambda * 0.5f) *
+			sin(delta_lambda * 0.5f);
 
-	float c = 2.0 * atan2(sqrt(a), sqrt(1.0 - a));
+	float c = 2.0f * atan2(sqrt(a), sqrt(1.0f - a));
 
 	return EARTH_RADIUS * c;
 }
@@ -354,14 +339,14 @@ float decodeHaversine64(uint64_t hash1, uint64_t hash2) {
 	Coord coords1 = decodeGeohash64(hash1);
 	Coord coords2 = decodeGeohash64(hash2);
 
-	return haversine(coords1.lat, coords1.lon, coords2.lat, coords2.lon);
+	return _haversine(coords1.lat, coords1.lon, coords2.lat, coords2.lon);
 }
 
 float decodeHaversine32(uint32_t hash1, uint32_t hash2) {
 	Coord coords1 = decodeGeohash32(hash1);
 	Coord coords2 = decodeGeohash32(hash2);
 
-	return haversine(coords1.lat, coords1.lon, coords2.lat, coords2.lon);
+	return _haversine(coords1.lat, coords1.lon, coords2.lat, coords2.lon);
 }
 
 void bulkGeohash64(
@@ -482,8 +467,8 @@ void bulkGeohash64Around(
 		uint64_t num_coords,
 		double resolution_width_km
 		) {
-	uint64_t bits = calculate_bits_for_resolution32(resolution_width_km);
-	uint64_t shift_val = 32 - (2 * bits);
+	uint64_t bits = calculate_bits_for_resolution64(resolution_width_km);
+	uint64_t shift_val = 64 - (2 * bits);
 
 	uint64_t end_idx = num_coords - (num_coords % 8);
 

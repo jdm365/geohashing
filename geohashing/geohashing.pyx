@@ -65,9 +65,9 @@ cdef extern from "engine.h":
             size_t num_points,
             float resolution_width_km
     )
-    Coord decodeGeohash32(uint32_t hash)
-    Coord decodeGeohash64(uint64_t hash)
-    float haversine(
+    Coord decodeGeohash32(uint32_t _hash)
+    Coord decodeGeohash64(uint64_t _hash)
+    float _haversine(
             float lat1,
             float lon1,
             float lat2,
@@ -200,7 +200,7 @@ def haversine(
         float lat2,
         float lon2
         ):
-    return haversine(lat1, lon1, lat2, lon2)
+    return _haversine(lat1, lon1, lat2, lon2)
 
 
 def decode_haversine32(

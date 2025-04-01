@@ -16,15 +16,12 @@ if os.uname().sysname == "Darwin":
             "-march=native",
             "-ffast-math",
             "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
-            ## "-I/opt/homebrew/opt/libomp/include",
-            ## "-fopenmp",
             "-pthread",
             ]
     LINKER_FLAGS = [
         "-L/Library/Developer/CommandLineTools/usr/lib",
         "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
-        ## "-L/opt/homebrew/opt/libomp/lib",
-        ## "-lomp",
+        "-lm",
     ]
 elif os.uname().sysname == "Linux":
     COMPILER_FLAGS = [
@@ -36,6 +33,7 @@ elif os.uname().sysname == "Linux":
             ]
     LINKER_FLAGS = [
             "-pthread",
+            "-lm",
             ]
 else:
     raise ValueError("Unsupported OS")

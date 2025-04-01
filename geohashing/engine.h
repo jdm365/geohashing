@@ -52,7 +52,7 @@ typedef struct {
 Coord decodeGeohash64(uint64_t hash);
 Coord decodeGeohash32(uint32_t hash);
 
-float haversine(float lat1, float lon1, float lat2, float lon2);
+float _haversine(float lat1, float lon1, float lat2, float lon2);
 
 float decodeHaversine64(uint64_t hash1, uint64_t hash2);
 float decodeHaversine32(uint32_t hash1, uint32_t hash2);
