@@ -1,2 +1,2 @@
 # geohashing
-A python library for geohashing written in c.
+A python library for geohashing written in c
