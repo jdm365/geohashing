@@ -84,7 +84,6 @@ cdef extern from "engine.h":
     )
 
 
-
 def geohash_bulk(
         np.ndarray[float, ndim=1] lats,
         np.ndarray[float, ndim=1] lons,
