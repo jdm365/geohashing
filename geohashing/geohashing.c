@@ -4,11 +4,11 @@
 {
     "distutils": {
         "depends": [
-            "/tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayobject.h",
-            "/tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayscalars.h",
-            "/tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarrayobject.h",
-            "/tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarraytypes.h",
-            "/tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/_core/include/numpy/ufuncobject.h",
+            "/var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayobject.h",
+            "/var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayscalars.h",
+            "/var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarrayobject.h",
+            "/var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarraytypes.h",
+            "/var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/_core/include/numpy/ufuncobject.h",
             "geohashing/engine.h"
         ],
         "extra_compile_args": [
@@ -16,15 +16,19 @@
             "-Wall",
             "-march=native",
             "-ffast-math",
+            "-isysroot",
+            "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
             "-pthread"
         ],
         "extra_link_args": [
-            "-pthread",
+            "-L/Library/Developer/CommandLineTools/usr/lib",
+            "-isysroot",
+            "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
             "-lm"
         ],
         "include_dirs": [
             "geohashing",
-            "/tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/_core/include"
+            "/var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/_core/include"
         ],
         "language": "c",
         "name": "geohashing",
@@ -1585,7 +1589,7 @@ typedef struct {
 
 /* #### Code section: numeric_typedefs ### */
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":787
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":787
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1594,7 +1598,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":788
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":788
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1603,7 +1607,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":789
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":789
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1612,7 +1616,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":790
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":790
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1621,7 +1625,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":794
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":794
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1630,7 +1634,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":795
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":795
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1639,7 +1643,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":796
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":796
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1648,7 +1652,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":797
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":797
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1657,7 +1661,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":801
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":801
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1666,7 +1670,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":802
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":802
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1675,7 +1679,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":809
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":809
  * ctypedef double complex complex128_t
  * 
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1684,7 +1688,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":810
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":810
  * 
  * ctypedef npy_longlong   longlong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1693,7 +1697,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":812
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":812
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1702,7 +1706,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":813
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":813
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1711,7 +1715,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":815
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":815
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1720,7 +1724,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":816
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":816
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1729,7 +1733,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":817
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":817
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1778,7 +1782,7 @@ static CYTHON_INLINE __pyx_t_long_double_complex __pyx_t_long_double_complex_fro
 
 /*--- Type declarations ---*/
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1113
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1113
  * 
  * # Iterator API added in v1.6
  * ctypedef int (*NpyIter_IterNextFunc)(NpyIter* it) noexcept nogil             # <<<<<<<<<<<<<<
@@ -1787,7 +1791,7 @@ static CYTHON_INLINE __pyx_t_long_double_complex __pyx_t_long_double_complex_fro
  */
 typedef int (*__pyx_t_5numpy_NpyIter_IterNextFunc)(NpyIter *);
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1114
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1114
  * # Iterator API added in v1.6
  * ctypedef int (*NpyIter_IterNextFunc)(NpyIter* it) noexcept nogil
  * ctypedef void (*NpyIter_GetMultiIndexFunc)(NpyIter* it, npy_intp* outcoords) noexcept nogil             # <<<<<<<<<<<<<<
@@ -3218,7 +3222,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_codeobj__18 __pyx_mstate_global->__pyx_codeobj__18
 /* #### Code section: module_code ### */
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":287
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":287
  * 
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3229,7 +3233,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_Descr *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":288
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":288
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:
  *             return PyDataType_ELSIZE(self)             # <<<<<<<<<<<<<<
@@ -3239,7 +3243,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   __pyx_r = PyDataType_ELSIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":287
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":287
  * 
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3252,7 +3256,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":291
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":291
  * 
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3263,7 +3267,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray_Descr *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":292
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":292
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:
  *             return PyDataType_ALIGNMENT(self)             # <<<<<<<<<<<<<<
@@ -3273,7 +3277,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   __pyx_r = PyDataType_ALIGNMENT(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":291
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":291
  * 
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3286,7 +3290,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":297
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":297
  *         # for this using PyDataType_HASFIELDS.
  *         @property
  *         cdef inline object fields(self):             # <<<<<<<<<<<<<<
@@ -3300,7 +3304,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   PyObject *__pyx_t_1;
   __Pyx_RefNannySetupContext("fields", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":298
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":298
  *         @property
  *         cdef inline object fields(self):
  *             return <object>PyDataType_FIELDS(self)             # <<<<<<<<<<<<<<
@@ -3313,7 +3317,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   __pyx_r = ((PyObject *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":297
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":297
  *         # for this using PyDataType_HASFIELDS.
  *         @property
  *         cdef inline object fields(self):             # <<<<<<<<<<<<<<
@@ -3328,7 +3332,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":301
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":301
  * 
  *         @property
  *         cdef inline tuple names(self):             # <<<<<<<<<<<<<<
@@ -3342,7 +3346,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   PyObject *__pyx_t_1;
   __Pyx_RefNannySetupContext("names", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":302
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":302
  *         @property
  *         cdef inline tuple names(self):
  *             return <tuple>PyDataType_NAMES(self)             # <<<<<<<<<<<<<<
@@ -3355,7 +3359,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   __pyx_r = ((PyObject*)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":301
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":301
  * 
  *         @property
  *         cdef inline tuple names(self):             # <<<<<<<<<<<<<<
@@ -3370,7 +3374,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":308
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":308
  *         # this field via the inline helper method PyDataType_SHAPE.
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3381,7 +3385,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
 static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarray(PyArray_Descr *__pyx_v_self) {
   PyArray_ArrayDescr *__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":309
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":309
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:
  *             return PyDataType_SUBARRAY(self)             # <<<<<<<<<<<<<<
@@ -3391,7 +3395,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   __pyx_r = PyDataType_SUBARRAY(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":308
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":308
  *         # this field via the inline helper method PyDataType_SHAPE.
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3404,7 +3408,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":312
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":312
  * 
  *         @property
  *         cdef inline npy_uint64 flags(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3415,7 +3419,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
 static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr *__pyx_v_self) {
   npy_uint64 __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":314
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":314
  *         cdef inline npy_uint64 flags(self) noexcept nogil:
  *             """The data types flags."""
  *             return PyDataType_FLAGS(self)             # <<<<<<<<<<<<<<
@@ -3425,7 +3429,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   __pyx_r = PyDataType_FLAGS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":312
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":312
  * 
  *         @property
  *         cdef inline npy_uint64 flags(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3438,7 +3442,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":324
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":324
  * 
  *         @property
  *         cdef inline int numiter(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3449,7 +3453,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
 static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMultiIterObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":326
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":326
  *         cdef inline int numiter(self) noexcept nogil:
  *             """The number of arrays that need to be broadcast to the same shape."""
  *             return PyArray_MultiIter_NUMITER(self)             # <<<<<<<<<<<<<<
@@ -3459,7 +3463,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   __pyx_r = PyArray_MultiIter_NUMITER(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":324
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":324
  * 
  *         @property
  *         cdef inline int numiter(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3472,7 +3476,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":329
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":329
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3483,7 +3487,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiIterObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":331
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":331
  *         cdef inline npy_intp size(self) noexcept nogil:
  *             """The total broadcasted size."""
  *             return PyArray_MultiIter_SIZE(self)             # <<<<<<<<<<<<<<
@@ -3493,7 +3497,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   __pyx_r = PyArray_MultiIter_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":329
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":329
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3506,7 +3510,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":334
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":334
  * 
  *         @property
  *         cdef inline npy_intp index(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3517,7 +3521,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMultiIterObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":336
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":336
  *         cdef inline npy_intp index(self) noexcept nogil:
  *             """The current (1-d) index into the broadcasted result."""
  *             return PyArray_MultiIter_INDEX(self)             # <<<<<<<<<<<<<<
@@ -3527,7 +3531,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   __pyx_r = PyArray_MultiIter_INDEX(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":334
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":334
  * 
  *         @property
  *         cdef inline npy_intp index(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3540,7 +3544,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":339
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":339
  * 
  *         @property
  *         cdef inline int nd(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3551,7 +3555,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
 static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":341
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":341
  *         cdef inline int nd(self) noexcept nogil:
  *             """The number of dimensions in the broadcasted result."""
  *             return PyArray_MultiIter_NDIM(self)             # <<<<<<<<<<<<<<
@@ -3561,7 +3565,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   __pyx_r = PyArray_MultiIter_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":339
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":339
  * 
  *         @property
  *         cdef inline int nd(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3574,7 +3578,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":344
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":344
  * 
  *         @property
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3585,7 +3589,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions(PyArrayMultiIterObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":346
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":346
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:
  *             """The shape of the broadcasted result."""
  *             return PyArray_MultiIter_DIMS(self)             # <<<<<<<<<<<<<<
@@ -3595,7 +3599,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   __pyx_r = PyArray_MultiIter_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":344
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":344
  * 
  *         @property
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3608,7 +3612,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":349
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":349
  * 
  *         @property
  *         cdef inline void** iters(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3619,7 +3623,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
 static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiIterObject *__pyx_v_self) {
   void **__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":352
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":352
  *             """An array of iterator objects that holds the iterators for the arrays to be broadcast together.
  *             On return, the iterators are adjusted for broadcasting."""
  *             return PyArray_MultiIter_ITERS(self)             # <<<<<<<<<<<<<<
@@ -3629,7 +3633,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   __pyx_r = PyArray_MultiIter_ITERS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":349
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":349
  * 
  *         @property
  *         cdef inline void** iters(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3642,7 +3646,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":367
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":367
  * 
  *         @property
  *         cdef inline PyObject* base(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3653,7 +3657,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject *__pyx_v_self) {
   PyObject *__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":370
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":370
  *             """Returns a borrowed reference to the object owning the data/memory.
  *             """
  *             return PyArray_BASE(self)             # <<<<<<<<<<<<<<
@@ -3663,7 +3667,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   __pyx_r = PyArray_BASE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":367
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":367
  * 
  *         @property
  *         cdef inline PyObject* base(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3676,7 +3680,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":373
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":373
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -3690,7 +3694,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   PyArray_Descr *__pyx_t_1;
   __Pyx_RefNannySetupContext("descr", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":376
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":376
  *             """Returns an owned reference to the dtype of the array.
  *             """
  *             return <dtype>PyArray_DESCR(self)             # <<<<<<<<<<<<<<
@@ -3703,7 +3707,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   __pyx_r = ((PyArray_Descr *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":373
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":373
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -3718,7 +3722,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":379
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":379
  * 
  *         @property
  *         cdef inline int ndim(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3729,7 +3733,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
 static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":382
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":382
  *             """Returns the number of dimensions in the array.
  *             """
  *             return PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -3739,7 +3743,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   __pyx_r = PyArray_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":379
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":379
  * 
  *         @property
  *         cdef inline int ndim(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3752,7 +3756,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":385
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":385
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3763,7 +3767,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":390
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":390
  *             Can return NULL for 0-dimensional arrays.
  *             """
  *             return PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -3773,7 +3777,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   __pyx_r = PyArray_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":385
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":385
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3786,7 +3790,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":393
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":393
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3797,7 +3801,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":397
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":397
  *             The number of elements matches the number of dimensions of the array (ndim).
  *             """
  *             return PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -3807,7 +3811,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   __pyx_r = PyArray_STRIDES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":393
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":393
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3820,7 +3824,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":400
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":400
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3831,7 +3835,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":403
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":403
  *             """Returns the total size (in number of elements) of the array.
  *             """
  *             return PyArray_SIZE(self)             # <<<<<<<<<<<<<<
@@ -3841,7 +3845,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   __pyx_r = PyArray_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":400
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":400
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3854,7 +3858,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":406
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":406
  * 
  *         @property
  *         cdef inline char* data(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3865,7 +3869,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
 static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__pyx_v_self) {
   char *__pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":412
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":412
  *             of `PyArray_DATA()` instead, which returns a 'void*'.
  *             """
  *             return PyArray_BYTES(self)             # <<<<<<<<<<<<<<
@@ -3875,7 +3879,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   __pyx_r = PyArray_BYTES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":406
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":406
  * 
  *         @property
  *         cdef inline char* data(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -3888,7 +3892,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":824
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":824
  * ctypedef long double complex clongdouble_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -3905,7 +3909,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":825
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":825
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -3919,7 +3923,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":824
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":824
  * ctypedef long double complex clongdouble_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -3938,7 +3942,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":827
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":827
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -3955,7 +3959,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":828
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":828
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -3969,7 +3973,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":827
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":827
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -3988,7 +3992,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":830
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":830
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -4005,7 +4009,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":831
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":831
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -4019,7 +4023,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":830
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":830
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -4038,7 +4042,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":833
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":833
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -4055,7 +4059,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":834
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":834
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -4069,7 +4073,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":833
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":833
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -4088,7 +4092,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":836
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":836
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -4105,7 +4109,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":837
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":837
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -4119,7 +4123,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":836
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":836
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -4138,7 +4142,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":839
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":839
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -4153,7 +4157,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   PyObject *__pyx_t_2;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":840
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":840
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -4163,7 +4167,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = PyDataType_HASSUBARRAY(__pyx_v_d);
   if (__pyx_t_1) {
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":841
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":841
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -4176,7 +4180,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_t_2);
     goto __pyx_L0;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":840
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":840
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -4185,7 +4189,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":843
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":843
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -4199,7 +4203,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":839
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":839
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -4214,7 +4218,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1027
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1027
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:             # <<<<<<<<<<<<<<
@@ -4228,7 +4232,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1028
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1028
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -4237,7 +4241,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1029
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1029
  * cdef inline void set_array_base(ndarray arr, object base) except *:
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -4246,7 +4250,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   __pyx_t_1 = PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 1029, __pyx_L1_error)
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1027
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1027
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:             # <<<<<<<<<<<<<<
@@ -4261,7 +4265,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __pyx_L0:;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1031
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1031
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -4276,7 +4280,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1032
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1032
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -4285,7 +4289,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1033
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1033
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -4295,7 +4299,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = (__pyx_v_base == NULL);
   if (__pyx_t_1) {
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1034
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1034
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -4306,7 +4310,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1033
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1033
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -4315,7 +4319,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1035
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1035
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -4327,7 +4331,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1031
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1031
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -4342,7 +4346,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1039
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1039
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -4366,7 +4370,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1040
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1040
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4382,7 +4386,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1041
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1041
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -4391,7 +4395,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 1041, __pyx_L3_error)
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1040
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1040
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4405,7 +4409,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1042
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1042
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4420,7 +4424,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1043
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1043
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy._core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -4435,7 +4439,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1040
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1040
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4451,7 +4455,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1039
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1039
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -4474,7 +4478,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1045
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1045
  *         raise ImportError("numpy._core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -4498,7 +4502,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1046
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1046
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4514,7 +4518,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1047
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1047
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -4523,7 +4527,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 1047, __pyx_L3_error)
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1046
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1046
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4537,7 +4541,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1048
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1048
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4552,7 +4556,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1049
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1049
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -4567,7 +4571,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1046
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1046
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4583,7 +4587,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1045
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1045
  *         raise ImportError("numpy._core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -4606,7 +4610,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1051
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1051
  *         raise ImportError("numpy._core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -4630,7 +4634,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 1);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1052
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1052
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4646,7 +4650,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1053
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1053
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -4655,7 +4659,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 1053, __pyx_L3_error)
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1052
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1052
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4669,7 +4673,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1054
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1054
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4684,7 +4688,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1055
+      /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1055
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -4699,7 +4703,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1052
+    /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1052
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4715,7 +4719,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1051
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1051
  *         raise ImportError("numpy._core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -4738,7 +4742,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1058
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1058
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -4749,7 +4753,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
 static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_obj) {
   int __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1070
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1070
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -4759,7 +4763,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1058
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1058
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -4772,7 +4776,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1073
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1073
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -4783,7 +4787,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
 static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_obj) {
   int __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1085
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1085
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -4793,7 +4797,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1073
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1073
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -4806,7 +4810,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1088
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1088
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -4817,7 +4821,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1095
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1095
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -4827,7 +4831,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1088
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1088
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -4840,7 +4844,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1098
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1098
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -4851,7 +4855,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1102
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1102
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -4861,7 +4865,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1098
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1098
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -4874,7 +4878,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1105
+/* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1105
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -4885,7 +4889,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1109
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1109
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -4895,7 +4899,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1105
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1105
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -4908,7 +4912,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   return __pyx_r;
 }
 
-/* "geohashing.pyx":88
+/* "geohashing.pyx":87
  * 
  * 
  * def geohash_bulk(             # <<<<<<<<<<<<<<
@@ -4978,7 +4982,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 87, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -4986,9 +4990,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 87, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("geohash_bulk", 0, 3, 4, 1); __PYX_ERR(1, 88, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("geohash_bulk", 0, 3, 4, 1); __PYX_ERR(1, 87, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -4996,21 +5000,21 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 87, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("geohash_bulk", 0, 3, 4, 2); __PYX_ERR(1, 88, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("geohash_bulk", 0, 3, 4, 2); __PYX_ERR(1, 87, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_num_threads);
           if (value) { values[3] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 87, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "geohash_bulk") < 0)) __PYX_ERR(1, 88, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "geohash_bulk") < 0)) __PYX_ERR(1, 87, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -5025,16 +5029,16 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
     __pyx_v_lats = ((PyArrayObject *)values[0]);
     __pyx_v_lons = ((PyArrayObject *)values[1]);
-    __pyx_v_resolution_width_km = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_resolution_width_km == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 91, __pyx_L3_error)
+    __pyx_v_resolution_width_km = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_resolution_width_km == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 90, __pyx_L3_error)
     if (values[3]) {
-      __pyx_v_num_threads = __Pyx_PyInt_As_size_t(values[3]); if (unlikely((__pyx_v_num_threads == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 92, __pyx_L3_error)
+      __pyx_v_num_threads = __Pyx_PyInt_As_size_t(values[3]); if (unlikely((__pyx_v_num_threads == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 91, __pyx_L3_error)
     } else {
       __pyx_v_num_threads = ((size_t)((size_t)0));
     }
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("geohash_bulk", 0, 3, 4, __pyx_nargs); __PYX_ERR(1, 88, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("geohash_bulk", 0, 3, 4, __pyx_nargs); __PYX_ERR(1, 87, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5048,8 +5052,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lats), __pyx_ptype_5numpy_ndarray, 1, "lats", 0))) __PYX_ERR(1, 89, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lons), __pyx_ptype_5numpy_ndarray, 1, "lons", 0))) __PYX_ERR(1, 90, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lats), __pyx_ptype_5numpy_ndarray, 1, "lats", 0))) __PYX_ERR(1, 88, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lons), __pyx_ptype_5numpy_ndarray, 1, "lons", 0))) __PYX_ERR(1, 89, __pyx_L1_error)
   __pyx_r = __pyx_pf_10geohashing_geohash_bulk(__pyx_self, __pyx_v_lats, __pyx_v_lons, __pyx_v_resolution_width_km, __pyx_v_num_threads);
 
   /* function exit code */
@@ -5090,16 +5094,16 @@ static PyObject *__pyx_pf_10geohashing_geohash_bulk(CYTHON_UNUSED PyObject *__py
   __pyx_pybuffernd_lons.rcbuffer = &__pyx_pybuffer_lons;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 88, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 87, __pyx_L1_error)
   }
   __pyx_pybuffernd_lats.diminfo[0].strides = __pyx_pybuffernd_lats.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lats.diminfo[0].shape = __pyx_pybuffernd_lats.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 88, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 87, __pyx_L1_error)
   }
   __pyx_pybuffernd_lons.diminfo[0].strides = __pyx_pybuffernd_lons.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lons.diminfo[0].shape = __pyx_pybuffernd_lons.rcbuffer->pybuffer.shape[0];
 
-  /* "geohashing.pyx":94
+  /* "geohashing.pyx":93
  *         size_t num_threads = 0,
  *         ):
  *     if resolution_width_km < 0.01:             # <<<<<<<<<<<<<<
@@ -5109,7 +5113,7 @@ static PyObject *__pyx_pf_10geohashing_geohash_bulk(CYTHON_UNUSED PyObject *__py
   __pyx_t_1 = (__pyx_v_resolution_width_km < 0.01);
   if (__pyx_t_1) {
 
-    /* "geohashing.pyx":95
+    /* "geohashing.pyx":94
  *         ):
  *     if resolution_width_km < 0.01:
  *         return geohash_bulk_64(lats, lons, <double>resolution_width_km)             # <<<<<<<<<<<<<<
@@ -5117,13 +5121,13 @@ static PyObject *__pyx_pf_10geohashing_geohash_bulk(CYTHON_UNUSED PyObject *__py
  *         return geohash32_bulk(lats, lons, resolution_width_km, num_threads)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash_bulk_64(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), ((double)__pyx_v_resolution_width_km))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 95, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash_bulk_64(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), ((double)__pyx_v_resolution_width_km))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "geohashing.pyx":94
+    /* "geohashing.pyx":93
  *         size_t num_threads = 0,
  *         ):
  *     if resolution_width_km < 0.01:             # <<<<<<<<<<<<<<
@@ -5132,7 +5136,7 @@ static PyObject *__pyx_pf_10geohashing_geohash_bulk(CYTHON_UNUSED PyObject *__py
  */
   }
 
-  /* "geohashing.pyx":97
+  /* "geohashing.pyx":96
  *         return geohash_bulk_64(lats, lons, <double>resolution_width_km)
  *     else:
  *         return geohash32_bulk(lats, lons, resolution_width_km, num_threads)             # <<<<<<<<<<<<<<
@@ -5141,14 +5145,14 @@ static PyObject *__pyx_pf_10geohashing_geohash_bulk(CYTHON_UNUSED PyObject *__py
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash32_bulk(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), __pyx_v_resolution_width_km, __pyx_v_num_threads)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 97, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash32_bulk(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), __pyx_v_resolution_width_km, __pyx_v_num_threads)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 96, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
   }
 
-  /* "geohashing.pyx":88
+  /* "geohashing.pyx":87
  * 
  * 
  * def geohash_bulk(             # <<<<<<<<<<<<<<
@@ -5178,7 +5182,7 @@ static PyObject *__pyx_pf_10geohashing_geohash_bulk(CYTHON_UNUSED PyObject *__py
   return __pyx_r;
 }
 
-/* "geohashing.pyx":99
+/* "geohashing.pyx":98
  *         return geohash32_bulk(lats, lons, resolution_width_km, num_threads)
  * 
  * cdef np.ndarray[uint32_t, ndim=1] geohash32_bulk(             # <<<<<<<<<<<<<<
@@ -5227,55 +5231,55 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
   __pyx_pybuffernd_lons.rcbuffer = &__pyx_pybuffer_lons;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 99, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 98, __pyx_L1_error)
   }
   __pyx_pybuffernd_lats.diminfo[0].strides = __pyx_pybuffernd_lats.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lats.diminfo[0].shape = __pyx_pybuffernd_lats.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 99, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 98, __pyx_L1_error)
   }
   __pyx_pybuffernd_lons.diminfo[0].strides = __pyx_pybuffernd_lons.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lons.diminfo[0].shape = __pyx_pybuffernd_lons.rcbuffer->pybuffer.shape[0];
 
-  /* "geohashing.pyx":105
+  /* "geohashing.pyx":104
  *         size_t num_threads,
  *         ):
  *     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint32)             # <<<<<<<<<<<<<<
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_npy_intp((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0])); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_npy_intp((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0])); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 105, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 104, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint32); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint32); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 105, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 105, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 104, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_hashes.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn_uint32_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_hashes = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_hashes.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(1, 105, __pyx_L1_error)
+      __PYX_ERR(1, 104, __pyx_L1_error)
     } else {__pyx_pybuffernd_hashes.diminfo[0].strides = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_hashes.diminfo[0].shape = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -5283,7 +5287,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
   __pyx_v_hashes = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "geohashing.pyx":106
+  /* "geohashing.pyx":105
  *         ):
  *     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint32)
  *     cdef float* lats_ptr = <float*>lats.data             # <<<<<<<<<<<<<<
@@ -5292,7 +5296,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
  */
   __pyx_v_lats_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lats)));
 
-  /* "geohashing.pyx":107
+  /* "geohashing.pyx":106
  *     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint32)
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data             # <<<<<<<<<<<<<<
@@ -5301,7 +5305,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
  */
   __pyx_v_lons_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lons)));
 
-  /* "geohashing.pyx":108
+  /* "geohashing.pyx":107
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint32_t* hashes_ptr = <uint32_t*>hashes.data             # <<<<<<<<<<<<<<
@@ -5310,7 +5314,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
  */
   __pyx_v_hashes_ptr = ((uint32_t *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_hashes)));
 
-  /* "geohashing.pyx":109
+  /* "geohashing.pyx":108
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint32_t* hashes_ptr = <uint32_t*>hashes.data
  *     cdef uint64_t num_points = lats.shape[0]             # <<<<<<<<<<<<<<
@@ -5319,7 +5323,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
  */
   __pyx_v_num_points = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]);
 
-  /* "geohashing.pyx":111
+  /* "geohashing.pyx":110
  *     cdef uint64_t num_points = lats.shape[0]
  * 
  *     if num_threads == 0:             # <<<<<<<<<<<<<<
@@ -5329,7 +5333,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
   __pyx_t_7 = (__pyx_v_num_threads == 0);
   if (__pyx_t_7) {
 
-    /* "geohashing.pyx":112
+    /* "geohashing.pyx":111
  * 
  *     if num_threads == 0:
  *         if num_points > 5_000_000:             # <<<<<<<<<<<<<<
@@ -5339,16 +5343,16 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
     __pyx_t_7 = (__pyx_v_num_points > 0x4C4B40);
     if (__pyx_t_7) {
 
-      /* "geohashing.pyx":113
+      /* "geohashing.pyx":112
  *     if num_threads == 0:
  *         if num_points > 5_000_000:
  *             num_threads = os.cpu_count()             # <<<<<<<<<<<<<<
  *         else:
  *             num_threads = 1
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 113, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 112, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_cpu_count); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 113, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_cpu_count); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 112, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_1 = NULL;
@@ -5369,15 +5373,15 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
         PyObject *__pyx_callargs[2] = {__pyx_t_1, NULL};
         __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_8, 0+__pyx_t_8);
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-        if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 113, __pyx_L1_error)
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 112, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       }
-      __pyx_t_9 = __Pyx_PyInt_As_size_t(__pyx_t_5); if (unlikely((__pyx_t_9 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 113, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyInt_As_size_t(__pyx_t_5); if (unlikely((__pyx_t_9 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 112, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_v_num_threads = __pyx_t_9;
 
-      /* "geohashing.pyx":112
+      /* "geohashing.pyx":111
  * 
  *     if num_threads == 0:
  *         if num_points > 5_000_000:             # <<<<<<<<<<<<<<
@@ -5387,7 +5391,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
       goto __pyx_L4;
     }
 
-    /* "geohashing.pyx":115
+    /* "geohashing.pyx":114
  *             num_threads = os.cpu_count()
  *         else:
  *             num_threads = 1             # <<<<<<<<<<<<<<
@@ -5399,7 +5403,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
     }
     __pyx_L4:;
 
-    /* "geohashing.pyx":111
+    /* "geohashing.pyx":110
  *     cdef uint64_t num_points = lats.shape[0]
  * 
  *     if num_threads == 0:             # <<<<<<<<<<<<<<
@@ -5408,7 +5412,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
  */
   }
 
-  /* "geohashing.pyx":117
+  /* "geohashing.pyx":116
  *             num_threads = 1
  * 
  *     bulkGeohash32(             # <<<<<<<<<<<<<<
@@ -5417,7 +5421,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
  */
   bulkGeohash32(__pyx_v_lats_ptr, __pyx_v_lons_ptr, __pyx_v_hashes_ptr, __pyx_v_num_points, __pyx_v_resolution_width_km, __pyx_v_num_threads);
 
-  /* "geohashing.pyx":125
+  /* "geohashing.pyx":124
  *             num_threads,
  *             )
  *     return hashes             # <<<<<<<<<<<<<<
@@ -5429,7 +5433,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
   __pyx_r = ((PyArrayObject *)__pyx_v_hashes);
   goto __pyx_L0;
 
-  /* "geohashing.pyx":99
+  /* "geohashing.pyx":98
  *         return geohash32_bulk(lats, lons, resolution_width_km, num_threads)
  * 
  * cdef np.ndarray[uint32_t, ndim=1] geohash32_bulk(             # <<<<<<<<<<<<<<
@@ -5466,7 +5470,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk(PyArrayObject *__pyx_v
   return __pyx_r;
 }
 
-/* "geohashing.pyx":127
+/* "geohashing.pyx":126
  *     return hashes
  * 
  * cdef np.ndarray[uint64_t, ndim=1] geohash_bulk_64(             # <<<<<<<<<<<<<<
@@ -5512,55 +5516,55 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
   __pyx_pybuffernd_lons.rcbuffer = &__pyx_pybuffer_lons;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 127, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 126, __pyx_L1_error)
   }
   __pyx_pybuffernd_lats.diminfo[0].strides = __pyx_pybuffernd_lats.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lats.diminfo[0].shape = __pyx_pybuffernd_lats.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 127, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 126, __pyx_L1_error)
   }
   __pyx_pybuffernd_lons.diminfo[0].strides = __pyx_pybuffernd_lons.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lons.diminfo[0].shape = __pyx_pybuffernd_lons.rcbuffer->pybuffer.shape[0];
 
-  /* "geohashing.pyx":132
+  /* "geohashing.pyx":131
  *         double resolution_width_km,
  *         ):
  *     cdef np.ndarray[uint64_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint64)             # <<<<<<<<<<<<<<
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_npy_intp((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0])); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_npy_intp((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0])); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 132, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 131, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint64); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint64); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 132, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 132, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 131, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_hashes.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn_uint64_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_hashes = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_hashes.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(1, 132, __pyx_L1_error)
+      __PYX_ERR(1, 131, __pyx_L1_error)
     } else {__pyx_pybuffernd_hashes.diminfo[0].strides = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_hashes.diminfo[0].shape = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -5568,7 +5572,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
   __pyx_v_hashes = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "geohashing.pyx":133
+  /* "geohashing.pyx":132
  *         ):
  *     cdef np.ndarray[uint64_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint64)
  *     cdef float* lats_ptr = <float*>lats.data             # <<<<<<<<<<<<<<
@@ -5577,7 +5581,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
  */
   __pyx_v_lats_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lats)));
 
-  /* "geohashing.pyx":134
+  /* "geohashing.pyx":133
  *     cdef np.ndarray[uint64_t, ndim=1] hashes = np.zeros(lats.shape[0], dtype=np.uint64)
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data             # <<<<<<<<<<<<<<
@@ -5586,7 +5590,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
  */
   __pyx_v_lons_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lons)));
 
-  /* "geohashing.pyx":135
+  /* "geohashing.pyx":134
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint64_t* hashes_ptr = <uint64_t*>hashes.data             # <<<<<<<<<<<<<<
@@ -5595,7 +5599,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
  */
   __pyx_v_hashes_ptr = ((uint64_t *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_hashes)));
 
-  /* "geohashing.pyx":136
+  /* "geohashing.pyx":135
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint64_t* hashes_ptr = <uint64_t*>hashes.data
  *     cdef uint64_t num_points = lats.shape[0]             # <<<<<<<<<<<<<<
@@ -5604,7 +5608,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
  */
   __pyx_v_num_points = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]);
 
-  /* "geohashing.pyx":138
+  /* "geohashing.pyx":137
  *     cdef uint64_t num_points = lats.shape[0]
  * 
  *     bulkGeohash64(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)             # <<<<<<<<<<<<<<
@@ -5613,7 +5617,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
  */
   bulkGeohash64(__pyx_v_lats_ptr, __pyx_v_lons_ptr, __pyx_v_hashes_ptr, __pyx_v_num_points, __pyx_v_resolution_width_km);
 
-  /* "geohashing.pyx":139
+  /* "geohashing.pyx":138
  * 
  *     bulkGeohash64(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)
  *     return hashes             # <<<<<<<<<<<<<<
@@ -5625,7 +5629,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
   __pyx_r = ((PyArrayObject *)__pyx_v_hashes);
   goto __pyx_L0;
 
-  /* "geohashing.pyx":127
+  /* "geohashing.pyx":126
  *     return hashes
  * 
  * cdef np.ndarray[uint64_t, ndim=1] geohash_bulk_64(             # <<<<<<<<<<<<<<
@@ -5662,7 +5666,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64(PyArrayObject *__pyx_
   return __pyx_r;
 }
 
-/* "geohashing.pyx":141
+/* "geohashing.pyx":140
  *     return hashes
  * 
  * def geohash_around_bulk(             # <<<<<<<<<<<<<<
@@ -5729,7 +5733,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 141, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 140, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5737,9 +5741,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 141, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 140, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("geohash_around_bulk", 1, 3, 3, 1); __PYX_ERR(1, 141, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("geohash_around_bulk", 1, 3, 3, 1); __PYX_ERR(1, 140, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -5747,14 +5751,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 141, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 140, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("geohash_around_bulk", 1, 3, 3, 2); __PYX_ERR(1, 141, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("geohash_around_bulk", 1, 3, 3, 2); __PYX_ERR(1, 140, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "geohash_around_bulk") < 0)) __PYX_ERR(1, 141, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "geohash_around_bulk") < 0)) __PYX_ERR(1, 140, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -5765,11 +5769,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
     __pyx_v_lats = ((PyArrayObject *)values[0]);
     __pyx_v_lons = ((PyArrayObject *)values[1]);
-    __pyx_v_resolution_width_km = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_resolution_width_km == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 144, __pyx_L3_error)
+    __pyx_v_resolution_width_km = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_resolution_width_km == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 143, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("geohash_around_bulk", 1, 3, 3, __pyx_nargs); __PYX_ERR(1, 141, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("geohash_around_bulk", 1, 3, 3, __pyx_nargs); __PYX_ERR(1, 140, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5783,8 +5787,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lats), __pyx_ptype_5numpy_ndarray, 1, "lats", 0))) __PYX_ERR(1, 142, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lons), __pyx_ptype_5numpy_ndarray, 1, "lons", 0))) __PYX_ERR(1, 143, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lats), __pyx_ptype_5numpy_ndarray, 1, "lats", 0))) __PYX_ERR(1, 141, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_lons), __pyx_ptype_5numpy_ndarray, 1, "lons", 0))) __PYX_ERR(1, 142, __pyx_L1_error)
   __pyx_r = __pyx_pf_10geohashing_2geohash_around_bulk(__pyx_self, __pyx_v_lats, __pyx_v_lons, __pyx_v_resolution_width_km);
 
   /* function exit code */
@@ -5826,16 +5830,16 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
   __pyx_pybuffernd_lons.rcbuffer = &__pyx_pybuffer_lons;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 141, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 140, __pyx_L1_error)
   }
   __pyx_pybuffernd_lats.diminfo[0].strides = __pyx_pybuffernd_lats.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lats.diminfo[0].shape = __pyx_pybuffernd_lats.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 141, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 140, __pyx_L1_error)
   }
   __pyx_pybuffernd_lons.diminfo[0].strides = __pyx_pybuffernd_lons.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lons.diminfo[0].shape = __pyx_pybuffernd_lons.rcbuffer->pybuffer.shape[0];
 
-  /* "geohashing.pyx":146
+  /* "geohashing.pyx":145
  *         float resolution_width_km,
  *         ):
  *     if resolution_width_km < 0.01:             # <<<<<<<<<<<<<<
@@ -5845,7 +5849,7 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
   __pyx_t_1 = (__pyx_v_resolution_width_km < 0.01);
   if (__pyx_t_1) {
 
-    /* "geohashing.pyx":147
+    /* "geohashing.pyx":146
  *         ):
  *     if resolution_width_km < 0.01:
  *         return geohash_bulk_64_around(lats, lons, <double>resolution_width_km).reshape(-1, 4)             # <<<<<<<<<<<<<<
@@ -5853,19 +5857,19 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
  *         return geohash32_bulk_around(lats, lons, resolution_width_km).reshape(-1, 4)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash_bulk_64_around(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), ((double)__pyx_v_resolution_width_km))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 147, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash_bulk_64_around(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), ((double)__pyx_v_resolution_width_km))); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_reshape); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 147, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_reshape); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 147, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "geohashing.pyx":146
+    /* "geohashing.pyx":145
  *         float resolution_width_km,
  *         ):
  *     if resolution_width_km < 0.01:             # <<<<<<<<<<<<<<
@@ -5874,7 +5878,7 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "geohashing.pyx":149
+  /* "geohashing.pyx":148
  *         return geohash_bulk_64_around(lats, lons, <double>resolution_width_km).reshape(-1, 4)
  *     else:
  *         return geohash32_bulk_around(lats, lons, resolution_width_km).reshape(-1, 4)             # <<<<<<<<<<<<<<
@@ -5883,12 +5887,12 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash32_bulk_around(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), __pyx_v_resolution_width_km)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 149, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)__pyx_f_10geohashing_geohash32_bulk_around(((PyArrayObject *)__pyx_v_lats), ((PyArrayObject *)__pyx_v_lons), __pyx_v_resolution_width_km)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_reshape); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 149, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_reshape); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 149, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_r = __pyx_t_2;
@@ -5896,7 +5900,7 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
     goto __pyx_L0;
   }
 
-  /* "geohashing.pyx":141
+  /* "geohashing.pyx":140
  *     return hashes
  * 
  * def geohash_around_bulk(             # <<<<<<<<<<<<<<
@@ -5927,7 +5931,7 @@ static PyObject *__pyx_pf_10geohashing_2geohash_around_bulk(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "geohashing.pyx":151
+/* "geohashing.pyx":150
  *         return geohash32_bulk_around(lats, lons, resolution_width_km).reshape(-1, 4)
  * 
  * cdef np.ndarray[uint32_t, ndim=1] geohash32_bulk_around(             # <<<<<<<<<<<<<<
@@ -5973,55 +5977,55 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
   __pyx_pybuffernd_lons.rcbuffer = &__pyx_pybuffer_lons;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 151, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 150, __pyx_L1_error)
   }
   __pyx_pybuffernd_lats.diminfo[0].strides = __pyx_pybuffernd_lats.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lats.diminfo[0].shape = __pyx_pybuffernd_lats.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 151, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 150, __pyx_L1_error)
   }
   __pyx_pybuffernd_lons.diminfo[0].strides = __pyx_pybuffernd_lons.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lons.diminfo[0].shape = __pyx_pybuffernd_lons.rcbuffer->pybuffer.shape[0];
 
-  /* "geohashing.pyx":156
+  /* "geohashing.pyx":155
  *         float resolution_width_km,
  *         ):
  *     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0] * 4, dtype=np.uint32)             # <<<<<<<<<<<<<<
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_npy_intp(((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]) * 4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_npy_intp(((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]) * 4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 156, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 155, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint32); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint32); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 156, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 156, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 156, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 155, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_hashes.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn_uint32_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_hashes = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_hashes.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(1, 156, __pyx_L1_error)
+      __PYX_ERR(1, 155, __pyx_L1_error)
     } else {__pyx_pybuffernd_hashes.diminfo[0].strides = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_hashes.diminfo[0].shape = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -6029,7 +6033,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
   __pyx_v_hashes = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "geohashing.pyx":157
+  /* "geohashing.pyx":156
  *         ):
  *     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0] * 4, dtype=np.uint32)
  *     cdef float* lats_ptr = <float*>lats.data             # <<<<<<<<<<<<<<
@@ -6038,7 +6042,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
  */
   __pyx_v_lats_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lats)));
 
-  /* "geohashing.pyx":158
+  /* "geohashing.pyx":157
  *     cdef np.ndarray[uint32_t, ndim=1] hashes = np.zeros(lats.shape[0] * 4, dtype=np.uint32)
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data             # <<<<<<<<<<<<<<
@@ -6047,7 +6051,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
  */
   __pyx_v_lons_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lons)));
 
-  /* "geohashing.pyx":159
+  /* "geohashing.pyx":158
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint32_t* hashes_ptr = <uint32_t*>hashes.data             # <<<<<<<<<<<<<<
@@ -6056,7 +6060,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
  */
   __pyx_v_hashes_ptr = ((uint32_t *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_hashes)));
 
-  /* "geohashing.pyx":160
+  /* "geohashing.pyx":159
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint32_t* hashes_ptr = <uint32_t*>hashes.data
  *     cdef uint64_t num_points = lats.shape[0]             # <<<<<<<<<<<<<<
@@ -6065,7 +6069,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
  */
   __pyx_v_num_points = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]);
 
-  /* "geohashing.pyx":162
+  /* "geohashing.pyx":161
  *     cdef uint64_t num_points = lats.shape[0]
  * 
  *     bulkGeohash32Around(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)             # <<<<<<<<<<<<<<
@@ -6074,7 +6078,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
  */
   bulkGeohash32Around(__pyx_v_lats_ptr, __pyx_v_lons_ptr, __pyx_v_hashes_ptr, __pyx_v_num_points, __pyx_v_resolution_width_km);
 
-  /* "geohashing.pyx":163
+  /* "geohashing.pyx":162
  * 
  *     bulkGeohash32Around(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)
  *     return hashes             # <<<<<<<<<<<<<<
@@ -6086,7 +6090,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
   __pyx_r = ((PyArrayObject *)__pyx_v_hashes);
   goto __pyx_L0;
 
-  /* "geohashing.pyx":151
+  /* "geohashing.pyx":150
  *         return geohash32_bulk_around(lats, lons, resolution_width_km).reshape(-1, 4)
  * 
  * cdef np.ndarray[uint32_t, ndim=1] geohash32_bulk_around(             # <<<<<<<<<<<<<<
@@ -6123,7 +6127,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash32_bulk_around(PyArrayObject *
   return __pyx_r;
 }
 
-/* "geohashing.pyx":165
+/* "geohashing.pyx":164
  *     return hashes
  * 
  * cdef np.ndarray[uint64_t, ndim=1] geohash_bulk_64_around(             # <<<<<<<<<<<<<<
@@ -6169,55 +6173,55 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
   __pyx_pybuffernd_lons.rcbuffer = &__pyx_pybuffer_lons;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 165, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lats.rcbuffer->pybuffer, (PyObject*)__pyx_v_lats, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 164, __pyx_L1_error)
   }
   __pyx_pybuffernd_lats.diminfo[0].strides = __pyx_pybuffernd_lats.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lats.diminfo[0].shape = __pyx_pybuffernd_lats.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 165, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_lons.rcbuffer->pybuffer, (PyObject*)__pyx_v_lons, &__Pyx_TypeInfo_float, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(1, 164, __pyx_L1_error)
   }
   __pyx_pybuffernd_lons.diminfo[0].strides = __pyx_pybuffernd_lons.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_lons.diminfo[0].shape = __pyx_pybuffernd_lons.rcbuffer->pybuffer.shape[0];
 
-  /* "geohashing.pyx":170
+  /* "geohashing.pyx":169
  *         double resolution_width_km,
  *         ):
  *     cdef np.ndarray[uint64_t, ndim=1] hashes = np.zeros(lats.shape[0] * 4, dtype=np.uint64)             # <<<<<<<<<<<<<<
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_npy_intp(((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]) * 4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_npy_intp(((__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]) * 4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 170, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 169, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint64); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_uint64); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 170, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 170, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 170, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 169, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_hashes.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn_uint64_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_hashes = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_hashes.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(1, 170, __pyx_L1_error)
+      __PYX_ERR(1, 169, __pyx_L1_error)
     } else {__pyx_pybuffernd_hashes.diminfo[0].strides = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_hashes.diminfo[0].shape = __pyx_pybuffernd_hashes.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -6225,7 +6229,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
   __pyx_v_hashes = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "geohashing.pyx":171
+  /* "geohashing.pyx":170
  *         ):
  *     cdef np.ndarray[uint64_t, ndim=1] hashes = np.zeros(lats.shape[0] * 4, dtype=np.uint64)
  *     cdef float* lats_ptr = <float*>lats.data             # <<<<<<<<<<<<<<
@@ -6234,7 +6238,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
  */
   __pyx_v_lats_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lats)));
 
-  /* "geohashing.pyx":172
+  /* "geohashing.pyx":171
  *     cdef np.ndarray[uint64_t, ndim=1] hashes = np.zeros(lats.shape[0] * 4, dtype=np.uint64)
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data             # <<<<<<<<<<<<<<
@@ -6243,7 +6247,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
  */
   __pyx_v_lons_ptr = ((float *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_lons)));
 
-  /* "geohashing.pyx":173
+  /* "geohashing.pyx":172
  *     cdef float* lats_ptr = <float*>lats.data
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint64_t* hashes_ptr = <uint64_t*>hashes.data             # <<<<<<<<<<<<<<
@@ -6252,7 +6256,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
  */
   __pyx_v_hashes_ptr = ((uint64_t *)__pyx_f_5numpy_7ndarray_4data_data(((PyArrayObject *)__pyx_v_hashes)));
 
-  /* "geohashing.pyx":174
+  /* "geohashing.pyx":173
  *     cdef float* lons_ptr = <float*>lons.data
  *     cdef uint64_t* hashes_ptr = <uint64_t*>hashes.data
  *     cdef uint64_t num_points = lats.shape[0]             # <<<<<<<<<<<<<<
@@ -6261,7 +6265,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
  */
   __pyx_v_num_points = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_lats))[0]);
 
-  /* "geohashing.pyx":176
+  /* "geohashing.pyx":175
  *     cdef uint64_t num_points = lats.shape[0]
  * 
  *     bulkGeohash64Around(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)             # <<<<<<<<<<<<<<
@@ -6270,7 +6274,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
  */
   bulkGeohash64Around(__pyx_v_lats_ptr, __pyx_v_lons_ptr, __pyx_v_hashes_ptr, __pyx_v_num_points, __pyx_v_resolution_width_km);
 
-  /* "geohashing.pyx":177
+  /* "geohashing.pyx":176
  * 
  *     bulkGeohash64Around(lats_ptr, lons_ptr, hashes_ptr, num_points, resolution_width_km)
  *     return hashes             # <<<<<<<<<<<<<<
@@ -6282,7 +6286,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
   __pyx_r = ((PyArrayObject *)__pyx_v_hashes);
   goto __pyx_L0;
 
-  /* "geohashing.pyx":165
+  /* "geohashing.pyx":164
  *     return hashes
  * 
  * cdef np.ndarray[uint64_t, ndim=1] geohash_bulk_64_around(             # <<<<<<<<<<<<<<
@@ -6319,7 +6323,7 @@ static PyArrayObject *__pyx_f_10geohashing_geohash_bulk_64_around(PyArrayObject 
   return __pyx_r;
 }
 
-/* "geohashing.pyx":179
+/* "geohashing.pyx":178
  *     return hashes
  * 
  * def geohash(             # <<<<<<<<<<<<<<
@@ -6386,7 +6390,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 179, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 178, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -6394,9 +6398,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 179, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 178, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("geohash", 1, 3, 3, 1); __PYX_ERR(1, 179, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("geohash", 1, 3, 3, 1); __PYX_ERR(1, 178, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -6404,14 +6408,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 179, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 178, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("geohash", 1, 3, 3, 2); __PYX_ERR(1, 179, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("geohash", 1, 3, 3, 2); __PYX_ERR(1, 178, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "geohash") < 0)) __PYX_ERR(1, 179, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "geohash") < 0)) __PYX_ERR(1, 178, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -6420,13 +6424,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
       values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
     }
-    __pyx_v_lat = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_lat == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 180, __pyx_L3_error)
-    __pyx_v_lon = __pyx_PyFloat_AsFloat(values[1]); if (unlikely((__pyx_v_lon == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 181, __pyx_L3_error)
-    __pyx_v_resolution_width_km = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_resolution_width_km == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 182, __pyx_L3_error)
+    __pyx_v_lat = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_lat == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 179, __pyx_L3_error)
+    __pyx_v_lon = __pyx_PyFloat_AsFloat(values[1]); if (unlikely((__pyx_v_lon == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 180, __pyx_L3_error)
+    __pyx_v_resolution_width_km = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_resolution_width_km == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 181, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("geohash", 1, 3, 3, __pyx_nargs); __PYX_ERR(1, 179, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("geohash", 1, 3, 3, __pyx_nargs); __PYX_ERR(1, 178, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6463,7 +6467,7 @@ static PyObject *__pyx_pf_10geohashing_4geohash(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("geohash", 1);
 
-  /* "geohashing.pyx":184
+  /* "geohashing.pyx":183
  *         float resolution_width_km
  *         ):
  *     if resolution_width_km < 0.01:             # <<<<<<<<<<<<<<
@@ -6473,7 +6477,7 @@ static PyObject *__pyx_pf_10geohashing_4geohash(CYTHON_UNUSED PyObject *__pyx_se
   __pyx_t_1 = (__pyx_v_resolution_width_km < 0.01);
   if (__pyx_t_1) {
 
-    /* "geohashing.pyx":185
+    /* "geohashing.pyx":184
  *         ):
  *     if resolution_width_km < 0.01:
  *         return geohash64(lat, lon, resolution_width_km)             # <<<<<<<<<<<<<<
@@ -6481,13 +6485,13 @@ static PyObject *__pyx_pf_10geohashing_4geohash(CYTHON_UNUSED PyObject *__pyx_se
  *         return geohash32(lat, lon, resolution_width_km)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_uint64_t(geohash64(__pyx_v_lat, __pyx_v_lon, __pyx_v_resolution_width_km)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 185, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_uint64_t(geohash64(__pyx_v_lat, __pyx_v_lon, __pyx_v_resolution_width_km)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 184, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "geohashing.pyx":184
+    /* "geohashing.pyx":183
  *         float resolution_width_km
  *         ):
  *     if resolution_width_km < 0.01:             # <<<<<<<<<<<<<<
@@ -6496,7 +6500,7 @@ static PyObject *__pyx_pf_10geohashing_4geohash(CYTHON_UNUSED PyObject *__pyx_se
  */
   }
 
-  /* "geohashing.pyx":187
+  /* "geohashing.pyx":186
  *         return geohash64(lat, lon, resolution_width_km)
  *     else:
  *         return geohash32(lat, lon, resolution_width_km)             # <<<<<<<<<<<<<<
@@ -6505,14 +6509,14 @@ static PyObject *__pyx_pf_10geohashing_4geohash(CYTHON_UNUSED PyObject *__pyx_se
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_uint32_t(geohash32(__pyx_v_lat, __pyx_v_lon, __pyx_v_resolution_width_km)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 187, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_uint32_t(geohash32(__pyx_v_lat, __pyx_v_lon, __pyx_v_resolution_width_km)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
   }
 
-  /* "geohashing.pyx":179
+  /* "geohashing.pyx":178
  *     return hashes
  * 
  * def geohash(             # <<<<<<<<<<<<<<
@@ -6531,7 +6535,7 @@ static PyObject *__pyx_pf_10geohashing_4geohash(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "geohashing.pyx":189
+/* "geohashing.pyx":188
  *         return geohash32(lat, lon, resolution_width_km)
  * 
  * def decode_geohash32(uint32_t _hash):             # <<<<<<<<<<<<<<
@@ -6592,23 +6596,23 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 189, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 188, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_geohash32") < 0)) __PYX_ERR(1, 189, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_geohash32") < 0)) __PYX_ERR(1, 188, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
     }
-    __pyx_v__hash = __Pyx_PyInt_As_uint32_t(values[0]); if (unlikely((__pyx_v__hash == ((uint32_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 189, __pyx_L3_error)
+    __pyx_v__hash = __Pyx_PyInt_As_uint32_t(values[0]); if (unlikely((__pyx_v__hash == ((uint32_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 188, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_geohash32", 1, 1, 1, __pyx_nargs); __PYX_ERR(1, 189, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_geohash32", 1, 1, 1, __pyx_nargs); __PYX_ERR(1, 188, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6647,7 +6651,7 @@ static PyObject *__pyx_pf_10geohashing_6decode_geohash32(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decode_geohash32", 1);
 
-  /* "geohashing.pyx":190
+  /* "geohashing.pyx":189
  * 
  * def decode_geohash32(uint32_t _hash):
  *     cdef Coord coord = decodeGeohash32(_hash)             # <<<<<<<<<<<<<<
@@ -6656,7 +6660,7 @@ static PyObject *__pyx_pf_10geohashing_6decode_geohash32(CYTHON_UNUSED PyObject 
  */
   __pyx_v_coord = decodeGeohash32(__pyx_v__hash);
 
-  /* "geohashing.pyx":191
+  /* "geohashing.pyx":190
  * def decode_geohash32(uint32_t _hash):
  *     cdef Coord coord = decodeGeohash32(_hash)
  *     return coord.lat, coord.lon             # <<<<<<<<<<<<<<
@@ -6664,23 +6668,23 @@ static PyObject *__pyx_pf_10geohashing_6decode_geohash32(CYTHON_UNUSED PyObject 
  * def decode_geohash64(uint64_t _hash):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_coord.lat); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_coord.lat); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_coord.lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_coord.lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 191, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 191, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 190, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2)) __PYX_ERR(1, 191, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2)) __PYX_ERR(1, 190, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "geohashing.pyx":189
+  /* "geohashing.pyx":188
  *         return geohash32(lat, lon, resolution_width_km)
  * 
  * def decode_geohash32(uint32_t _hash):             # <<<<<<<<<<<<<<
@@ -6701,7 +6705,7 @@ static PyObject *__pyx_pf_10geohashing_6decode_geohash32(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "geohashing.pyx":193
+/* "geohashing.pyx":192
  *     return coord.lat, coord.lon
  * 
  * def decode_geohash64(uint64_t _hash):             # <<<<<<<<<<<<<<
@@ -6762,23 +6766,23 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 193, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_geohash64") < 0)) __PYX_ERR(1, 193, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_geohash64") < 0)) __PYX_ERR(1, 192, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
     }
-    __pyx_v__hash = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v__hash == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 193, __pyx_L3_error)
+    __pyx_v__hash = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v__hash == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 192, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_geohash64", 1, 1, 1, __pyx_nargs); __PYX_ERR(1, 193, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_geohash64", 1, 1, 1, __pyx_nargs); __PYX_ERR(1, 192, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6817,7 +6821,7 @@ static PyObject *__pyx_pf_10geohashing_8decode_geohash64(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decode_geohash64", 1);
 
-  /* "geohashing.pyx":194
+  /* "geohashing.pyx":193
  * 
  * def decode_geohash64(uint64_t _hash):
  *     cdef Coord coord = decodeGeohash64(_hash)             # <<<<<<<<<<<<<<
@@ -6826,7 +6830,7 @@ static PyObject *__pyx_pf_10geohashing_8decode_geohash64(CYTHON_UNUSED PyObject 
  */
   __pyx_v_coord = decodeGeohash64(__pyx_v__hash);
 
-  /* "geohashing.pyx":195
+  /* "geohashing.pyx":194
  * def decode_geohash64(uint64_t _hash):
  *     cdef Coord coord = decodeGeohash64(_hash)
  *     return coord.lat, coord.lon             # <<<<<<<<<<<<<<
@@ -6834,23 +6838,23 @@ static PyObject *__pyx_pf_10geohashing_8decode_geohash64(CYTHON_UNUSED PyObject 
  * def haversine(
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_coord.lat); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 195, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_coord.lat); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_coord.lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 195, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_coord.lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 195, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 195, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(1, 194, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2)) __PYX_ERR(1, 195, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2)) __PYX_ERR(1, 194, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "geohashing.pyx":193
+  /* "geohashing.pyx":192
  *     return coord.lat, coord.lon
  * 
  * def decode_geohash64(uint64_t _hash):             # <<<<<<<<<<<<<<
@@ -6871,7 +6875,7 @@ static PyObject *__pyx_pf_10geohashing_8decode_geohash64(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "geohashing.pyx":197
+/* "geohashing.pyx":196
  *     return coord.lat, coord.lon
  * 
  * def haversine(             # <<<<<<<<<<<<<<
@@ -6941,7 +6945,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 196, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -6949,9 +6953,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 196, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, 1); __PYX_ERR(1, 197, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, 1); __PYX_ERR(1, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -6959,9 +6963,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 196, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, 2); __PYX_ERR(1, 197, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, 2); __PYX_ERR(1, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -6969,14 +6973,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 196, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, 3); __PYX_ERR(1, 197, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, 3); __PYX_ERR(1, 196, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "haversine") < 0)) __PYX_ERR(1, 197, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "haversine") < 0)) __PYX_ERR(1, 196, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 4)) {
       goto __pyx_L5_argtuple_error;
@@ -6986,14 +6990,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
       values[3] = __Pyx_Arg_FASTCALL(__pyx_args, 3);
     }
-    __pyx_v_lat1 = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_lat1 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 198, __pyx_L3_error)
-    __pyx_v_lon1 = __pyx_PyFloat_AsFloat(values[1]); if (unlikely((__pyx_v_lon1 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 199, __pyx_L3_error)
-    __pyx_v_lat2 = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_lat2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 200, __pyx_L3_error)
-    __pyx_v_lon2 = __pyx_PyFloat_AsFloat(values[3]); if (unlikely((__pyx_v_lon2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 201, __pyx_L3_error)
+    __pyx_v_lat1 = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_lat1 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L3_error)
+    __pyx_v_lon1 = __pyx_PyFloat_AsFloat(values[1]); if (unlikely((__pyx_v_lon1 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 198, __pyx_L3_error)
+    __pyx_v_lat2 = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_lat2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 199, __pyx_L3_error)
+    __pyx_v_lon2 = __pyx_PyFloat_AsFloat(values[3]); if (unlikely((__pyx_v_lon2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(1, 200, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, __pyx_nargs); __PYX_ERR(1, 197, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("haversine", 1, 4, 4, __pyx_nargs); __PYX_ERR(1, 196, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7029,7 +7033,7 @@ static PyObject *__pyx_pf_10geohashing_10haversine(CYTHON_UNUSED PyObject *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("haversine", 1);
 
-  /* "geohashing.pyx":203
+  /* "geohashing.pyx":202
  *         float lon2
  *         ):
  *     return _haversine(lat1, lon1, lat2, lon2)             # <<<<<<<<<<<<<<
@@ -7037,13 +7041,13 @@ static PyObject *__pyx_pf_10geohashing_10haversine(CYTHON_UNUSED PyObject *__pyx
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(_haversine(__pyx_v_lat1, __pyx_v_lon1, __pyx_v_lat2, __pyx_v_lon2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 203, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(_haversine(__pyx_v_lat1, __pyx_v_lon1, __pyx_v_lat2, __pyx_v_lon2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "geohashing.pyx":197
+  /* "geohashing.pyx":196
  *     return coord.lat, coord.lon
  * 
  * def haversine(             # <<<<<<<<<<<<<<
@@ -7062,7 +7066,7 @@ static PyObject *__pyx_pf_10geohashing_10haversine(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "geohashing.pyx":206
+/* "geohashing.pyx":205
  * 
  * 
  * def decode_haversine32(             # <<<<<<<<<<<<<<
@@ -7126,7 +7130,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 206, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 205, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -7134,14 +7138,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 206, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 205, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_haversine32", 1, 2, 2, 1); __PYX_ERR(1, 206, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_haversine32", 1, 2, 2, 1); __PYX_ERR(1, 205, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_haversine32") < 0)) __PYX_ERR(1, 206, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_haversine32") < 0)) __PYX_ERR(1, 205, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -7149,12 +7153,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_hash1 = __Pyx_PyInt_As_uint32_t(values[0]); if (unlikely((__pyx_v_hash1 == ((uint32_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 207, __pyx_L3_error)
-    __pyx_v_hash2 = __Pyx_PyInt_As_uint32_t(values[1]); if (unlikely((__pyx_v_hash2 == ((uint32_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 208, __pyx_L3_error)
+    __pyx_v_hash1 = __Pyx_PyInt_As_uint32_t(values[0]); if (unlikely((__pyx_v_hash1 == ((uint32_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 206, __pyx_L3_error)
+    __pyx_v_hash2 = __Pyx_PyInt_As_uint32_t(values[1]); if (unlikely((__pyx_v_hash2 == ((uint32_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 207, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_haversine32", 1, 2, 2, __pyx_nargs); __PYX_ERR(1, 206, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_haversine32", 1, 2, 2, __pyx_nargs); __PYX_ERR(1, 205, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7190,7 +7194,7 @@ static PyObject *__pyx_pf_10geohashing_12decode_haversine32(CYTHON_UNUSED PyObje
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decode_haversine32", 1);
 
-  /* "geohashing.pyx":210
+  /* "geohashing.pyx":209
  *         uint32_t hash2
  *         ):
  *     return decodeHaversine32(hash1, hash2)             # <<<<<<<<<<<<<<
@@ -7198,13 +7202,13 @@ static PyObject *__pyx_pf_10geohashing_12decode_haversine32(CYTHON_UNUSED PyObje
  * def decode_haversine64(
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(decodeHaversine32(__pyx_v_hash1, __pyx_v_hash2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 210, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(decodeHaversine32(__pyx_v_hash1, __pyx_v_hash2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "geohashing.pyx":206
+  /* "geohashing.pyx":205
  * 
  * 
  * def decode_haversine32(             # <<<<<<<<<<<<<<
@@ -7223,7 +7227,7 @@ static PyObject *__pyx_pf_10geohashing_12decode_haversine32(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "geohashing.pyx":212
+/* "geohashing.pyx":211
  *     return decodeHaversine32(hash1, hash2)
  * 
  * def decode_haversine64(             # <<<<<<<<<<<<<<
@@ -7287,7 +7291,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 212, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 211, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -7295,14 +7299,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 212, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 211, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_haversine64", 1, 2, 2, 1); __PYX_ERR(1, 212, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_haversine64", 1, 2, 2, 1); __PYX_ERR(1, 211, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_haversine64") < 0)) __PYX_ERR(1, 212, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "decode_haversine64") < 0)) __PYX_ERR(1, 211, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -7310,12 +7314,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_hash1 = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v_hash1 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 213, __pyx_L3_error)
-    __pyx_v_hash2 = __Pyx_PyInt_As_uint64_t(values[1]); if (unlikely((__pyx_v_hash2 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 214, __pyx_L3_error)
+    __pyx_v_hash1 = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v_hash1 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 212, __pyx_L3_error)
+    __pyx_v_hash2 = __Pyx_PyInt_As_uint64_t(values[1]); if (unlikely((__pyx_v_hash2 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(1, 213, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_haversine64", 1, 2, 2, __pyx_nargs); __PYX_ERR(1, 212, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_haversine64", 1, 2, 2, __pyx_nargs); __PYX_ERR(1, 211, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7351,19 +7355,19 @@ static PyObject *__pyx_pf_10geohashing_14decode_haversine64(CYTHON_UNUSED PyObje
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decode_haversine64", 1);
 
-  /* "geohashing.pyx":216
+  /* "geohashing.pyx":215
  *         uint64_t hash2
  *         ):
  *     return decodeHaversine64(hash1, hash2)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(decodeHaversine64(__pyx_v_hash1, __pyx_v_hash2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 216, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(decodeHaversine64(__pyx_v_hash1, __pyx_v_hash2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "geohashing.pyx":212
+  /* "geohashing.pyx":211
  *     return decodeHaversine32(hash1, hash2)
  * 
  * def decode_haversine64(             # <<<<<<<<<<<<<<
@@ -7462,7 +7466,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1043
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1043
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy._core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -7473,7 +7477,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "../../../tmp/.tmpyVIY9C/builds-v0/.tmp9hfji9/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1049
+  /* "../../../../../var/folders/73/kt49gd1d4fqfgtg4fhx6jn5m0000gr/T/.tmpR56Uhr/builds-v0/.tmpUtKifk/lib/python3.12/site-packages/numpy/__init__.cython-30.pxd":1049
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -7484,106 +7488,106 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "geohashing.pyx":147
+  /* "geohashing.pyx":146
  *         ):
  *     if resolution_width_km < 0.01:
  *         return geohash_bulk_64_around(lats, lons, <double>resolution_width_km).reshape(-1, 4)             # <<<<<<<<<<<<<<
  *     else:
  *         return geohash32_bulk_around(lats, lons, resolution_width_km).reshape(-1, 4)
  */
-  __pyx_tuple__3 = PyTuple_Pack(2, __pyx_int_neg_1, __pyx_int_4); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 147, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(2, __pyx_int_neg_1, __pyx_int_4); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "geohashing.pyx":88
+  /* "geohashing.pyx":87
  * 
  * 
  * def geohash_bulk(             # <<<<<<<<<<<<<<
  *         np.ndarray[float, ndim=1] lats,
  *         np.ndarray[float, ndim=1] lons,
  */
-  __pyx_tuple__5 = PyTuple_Pack(4, __pyx_n_s_lats, __pyx_n_s_lons, __pyx_n_s_resolution_width_km, __pyx_n_s_num_threads); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(1, 88, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(4, __pyx_n_s_lats, __pyx_n_s_lons, __pyx_n_s_resolution_width_km, __pyx_n_s_num_threads); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(1, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_geohash_bulk, 88, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(1, 88, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_geohash_bulk, 87, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(1, 87, __pyx_L1_error)
 
-  /* "geohashing.pyx":141
+  /* "geohashing.pyx":140
  *     return hashes
  * 
  * def geohash_around_bulk(             # <<<<<<<<<<<<<<
  *         np.ndarray[float, ndim=1] lats,
  *         np.ndarray[float, ndim=1] lons,
  */
-  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_lats, __pyx_n_s_lons, __pyx_n_s_resolution_width_km); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 141, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_lats, __pyx_n_s_lons, __pyx_n_s_resolution_width_km); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_geohash_around_bulk, 141, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(1, 141, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_geohash_around_bulk, 140, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(1, 140, __pyx_L1_error)
 
-  /* "geohashing.pyx":179
+  /* "geohashing.pyx":178
  *     return hashes
  * 
  * def geohash(             # <<<<<<<<<<<<<<
  *         float lat,
  *         float lon,
  */
-  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_n_s_lat, __pyx_n_s_lon, __pyx_n_s_resolution_width_km); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 179, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_n_s_lat, __pyx_n_s_lon, __pyx_n_s_resolution_width_km); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_geohash, 179, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(1, 179, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_geohash, 178, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(1, 178, __pyx_L1_error)
 
-  /* "geohashing.pyx":189
+  /* "geohashing.pyx":188
  *         return geohash32(lat, lon, resolution_width_km)
  * 
  * def decode_geohash32(uint32_t _hash):             # <<<<<<<<<<<<<<
  *     cdef Coord coord = decodeGeohash32(_hash)
  *     return coord.lat, coord.lon
  */
-  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_hash, __pyx_n_s_coord); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(1, 189, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_hash, __pyx_n_s_coord); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_geohash32, 189, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(1, 189, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_geohash32, 188, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(1, 188, __pyx_L1_error)
 
-  /* "geohashing.pyx":193
+  /* "geohashing.pyx":192
  *     return coord.lat, coord.lon
  * 
  * def decode_geohash64(uint64_t _hash):             # <<<<<<<<<<<<<<
  *     cdef Coord coord = decodeGeohash64(_hash)
  *     return coord.lat, coord.lon
  */
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_geohash64, 193, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(1, 193, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_geohash64, 192, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(1, 192, __pyx_L1_error)
 
-  /* "geohashing.pyx":197
+  /* "geohashing.pyx":196
  *     return coord.lat, coord.lon
  * 
  * def haversine(             # <<<<<<<<<<<<<<
  *         float lat1,
  *         float lon1,
  */
-  __pyx_tuple__14 = PyTuple_Pack(4, __pyx_n_s_lat1, __pyx_n_s_lon1, __pyx_n_s_lat2, __pyx_n_s_lon2); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(4, __pyx_n_s_lat1, __pyx_n_s_lon1, __pyx_n_s_lat2, __pyx_n_s_lon2); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(1, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_haversine, 197, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_haversine, 196, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(1, 196, __pyx_L1_error)
 
-  /* "geohashing.pyx":206
+  /* "geohashing.pyx":205
  * 
  * 
  * def decode_haversine32(             # <<<<<<<<<<<<<<
  *         uint32_t hash1,
  *         uint32_t hash2
  */
-  __pyx_tuple__16 = PyTuple_Pack(2, __pyx_n_s_hash1, __pyx_n_s_hash2); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 206, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(2, __pyx_n_s_hash1, __pyx_n_s_hash2); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_haversine32, 206, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(1, 206, __pyx_L1_error)
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_haversine32, 205, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(1, 205, __pyx_L1_error)
 
-  /* "geohashing.pyx":212
+  /* "geohashing.pyx":211
  *     return decodeHaversine32(hash1, hash2)
  * 
  * def decode_haversine64(             # <<<<<<<<<<<<<<
  *         uint64_t hash1,
  *         uint64_t hash2
  */
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_haversine64, 212, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 212, __pyx_L1_error)
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_geohashing_geohashing_pyx, __pyx_n_s_decode_haversine64, 211, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 211, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -8022,117 +8026,117 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_3 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(1, 8, __pyx_L1_error)
 
-  /* "geohashing.pyx":92
+  /* "geohashing.pyx":91
  *         np.ndarray[float, ndim=1] lons,
  *         float resolution_width_km,
  *         size_t num_threads = 0,             # <<<<<<<<<<<<<<
  *         ):
  *     if resolution_width_km < 0.01:
  */
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t(((size_t)0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 92, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t(((size_t)0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "geohashing.pyx":88
+  /* "geohashing.pyx":87
  * 
  * 
  * def geohash_bulk(             # <<<<<<<<<<<<<<
  *         np.ndarray[float, ndim=1] lats,
  *         np.ndarray[float, ndim=1] lons,
  */
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 88, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(1, 88, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(1, 87, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_1geohash_bulk, 0, __pyx_n_s_geohash_bulk, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 88, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_1geohash_bulk, 0, __pyx_n_s_geohash_bulk, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_t_4);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_geohash_bulk, __pyx_t_2) < 0) __PYX_ERR(1, 88, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_geohash_bulk, __pyx_t_2) < 0) __PYX_ERR(1, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":141
+  /* "geohashing.pyx":140
  *     return hashes
  * 
  * def geohash_around_bulk(             # <<<<<<<<<<<<<<
  *         np.ndarray[float, ndim=1] lats,
  *         np.ndarray[float, ndim=1] lons,
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_3geohash_around_bulk, 0, __pyx_n_s_geohash_around_bulk, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 141, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_3geohash_around_bulk, 0, __pyx_n_s_geohash_around_bulk, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_geohash_around_bulk, __pyx_t_2) < 0) __PYX_ERR(1, 141, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_geohash_around_bulk, __pyx_t_2) < 0) __PYX_ERR(1, 140, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":179
+  /* "geohashing.pyx":178
  *     return hashes
  * 
  * def geohash(             # <<<<<<<<<<<<<<
  *         float lat,
  *         float lon,
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_5geohash, 0, __pyx_n_s_geohash, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 179, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_5geohash, 0, __pyx_n_s_geohash, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_geohash, __pyx_t_2) < 0) __PYX_ERR(1, 179, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_geohash, __pyx_t_2) < 0) __PYX_ERR(1, 178, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":189
+  /* "geohashing.pyx":188
  *         return geohash32(lat, lon, resolution_width_km)
  * 
  * def decode_geohash32(uint32_t _hash):             # <<<<<<<<<<<<<<
  *     cdef Coord coord = decodeGeohash32(_hash)
  *     return coord.lat, coord.lon
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_7decode_geohash32, 0, __pyx_n_s_decode_geohash32, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 189, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_7decode_geohash32, 0, __pyx_n_s_decode_geohash32, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_geohash32, __pyx_t_2) < 0) __PYX_ERR(1, 189, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_geohash32, __pyx_t_2) < 0) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":193
+  /* "geohashing.pyx":192
  *     return coord.lat, coord.lon
  * 
  * def decode_geohash64(uint64_t _hash):             # <<<<<<<<<<<<<<
  *     cdef Coord coord = decodeGeohash64(_hash)
  *     return coord.lat, coord.lon
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_9decode_geohash64, 0, __pyx_n_s_decode_geohash64, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 193, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_9decode_geohash64, 0, __pyx_n_s_decode_geohash64, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_geohash64, __pyx_t_2) < 0) __PYX_ERR(1, 193, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_geohash64, __pyx_t_2) < 0) __PYX_ERR(1, 192, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":197
+  /* "geohashing.pyx":196
  *     return coord.lat, coord.lon
  * 
  * def haversine(             # <<<<<<<<<<<<<<
  *         float lat1,
  *         float lon1,
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_11haversine, 0, __pyx_n_s_haversine, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 197, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_11haversine, 0, __pyx_n_s_haversine, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_haversine, __pyx_t_2) < 0) __PYX_ERR(1, 197, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_haversine, __pyx_t_2) < 0) __PYX_ERR(1, 196, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":206
+  /* "geohashing.pyx":205
  * 
  * 
  * def decode_haversine32(             # <<<<<<<<<<<<<<
  *         uint32_t hash1,
  *         uint32_t hash2
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_13decode_haversine32, 0, __pyx_n_s_decode_haversine32, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 206, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_13decode_haversine32, 0, __pyx_n_s_decode_haversine32, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_haversine32, __pyx_t_2) < 0) __PYX_ERR(1, 206, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_haversine32, __pyx_t_2) < 0) __PYX_ERR(1, 205, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "geohashing.pyx":212
+  /* "geohashing.pyx":211
  *     return decodeHaversine32(hash1, hash2)
  * 
  * def decode_haversine64(             # <<<<<<<<<<<<<<
  *         uint64_t hash1,
  *         uint64_t hash2
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_15decode_haversine64, 0, __pyx_n_s_decode_haversine64, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 212, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_10geohashing_15decode_haversine64, 0, __pyx_n_s_decode_haversine64, NULL, __pyx_n_s_geohashing, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_haversine64, __pyx_t_2) < 0) __PYX_ERR(1, 212, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_decode_haversine64, __pyx_t_2) < 0) __PYX_ERR(1, 211, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "geohashing.pyx":1

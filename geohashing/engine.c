@@ -129,7 +129,7 @@ inline uint32_t _geohash32(float lat, float lon, uint64_t shift_val) {
 }
 
 inline void _geohash64Around(float lat, float lon, uint64_t shift_val, double resolution_width_km, uint64_t* hashes) {
-	if (shift_val < 2) {
+	if (shift_val <= 2) {
 		hashes[0] = _geohash64(lat, lon, shift_val);
 		return;
 	}
@@ -181,7 +181,7 @@ inline void _geohash64Around(float lat, float lon, uint64_t shift_val, double re
 }
 
 inline void _geohash32Around(float lat, float lon, uint64_t shift_val, float resolution_width_km, uint32_t* hashes) {
-	if (shift_val < 2) {
+	if (shift_val <= 2) {
 		hashes[0] = _geohash32(lat, lon, shift_val);
 		return;
 	}
@@ -195,9 +195,9 @@ inline void _geohash32Around(float lat, float lon, uint64_t shift_val, float res
 	// -----------
 	uint32_t last_two_bits = (next_resolution_hash >> (shift_val - 2)) & 0x3;
 
-	float degree_approx = 111.0 / resolution_width_km;
+	float degree_approx = 111.0 / (2.0f * resolution_width_km);
 
-	uint32_t base_hash = (next_resolution_hash >> shift_val) << shift_val;
+	uint32_t base_hash = _geohash32(lat, lon, shift_val);
 
 	// TODO: Figure out faster version.
 	// ALSO TODO: Handle wrapping around lat/lon boundaries.
@@ -227,7 +227,8 @@ inline void _geohash32Around(float lat, float lon, uint64_t shift_val, float res
             hashes[3] = _geohash32(lat, LON_WRAP_ADD(lon, degree_approx), shift_val);
             break;
         default:
-            hashes[0] = _geohash32(lat, lon, shift_val);
+			printf("Error: Invalid last two bits: %u\n", last_two_bits);
+			exit(1);
             break;
     }
 }
@@ -473,7 +474,7 @@ void bulkGeohash64Around(
 	uint64_t end_idx = num_coords - (num_coords % 8);
 
 	for (uint64_t i = 0; i < end_idx; i += 8) {
-		_geohash64Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + i);
+		_geohash64Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + (4 * i));
 		_geohash64Around(lats[i + 1], lons[i + 1], shift_val, resolution_width_km, hashes + (4 * (i + 1)));
 		_geohash64Around(lats[i + 2], lons[i + 2], shift_val, resolution_width_km, hashes + (4 * (i + 2)));
 		_geohash64Around(lats[i + 3], lons[i + 3], shift_val, resolution_width_km, hashes + (4 * (i + 3)));
@@ -484,7 +485,7 @@ void bulkGeohash64Around(
 	}
 
 	for (uint64_t i = end_idx; i < num_coords; ++i) {
-		_geohash64Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + i);
+		_geohash64Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + (4 * i));
 	}
 }
 
@@ -501,7 +502,7 @@ void bulkGeohash32Around(
 	uint64_t end_idx = num_coords - (num_coords % 8);
 
 	for (uint64_t i = 0; i < end_idx; i += 8) {
-		_geohash32Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + i);
+		_geohash32Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + (4 * i));
 		_geohash32Around(lats[i + 1], lons[i + 1], shift_val, resolution_width_km, hashes + (4 * (i + 1)));
 		_geohash32Around(lats[i + 2], lons[i + 2], shift_val, resolution_width_km, hashes + (4 * (i + 2)));
 		_geohash32Around(lats[i + 3], lons[i + 3], shift_val, resolution_width_km, hashes + (4 * (i + 3)));
@@ -512,6 +513,6 @@ void bulkGeohash32Around(
 	}
 
 	for (uint64_t i = end_idx; i < num_coords; ++i) {
-		_geohash32Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + i);
+		_geohash32Around(lats[i], lons[i], shift_val, resolution_width_km, hashes + (4 * i));
 	}
 }
